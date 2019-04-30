@@ -1,0 +1,11 @@
+
+<li class="list-group-item" [ngStyle]="{background:colorLove()}">  
+    <h4><img [src]=""/>Titre de l'article : {{ postTitre }}</h4>
+    <h4>Contenu de l'article : {{ postContenu }}</h4>
+    <h4>I love it : {{ postLove }}</h4>
+    <h4>Date de création de l'article : {{ postDate | date: 'EEEE d MMMM y' }}</h4>
+    <button class="btn btn-success"
+    (click) = onLove()>I love It</button>       
+    <button class="btn btn-danger"
+    (click)="noLove()">I don't love It</button>
+</li>
